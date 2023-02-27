@@ -126,7 +126,7 @@ export default function Header() {
         } else {
             setSelectedMenuIndex(index)
         }
-        console.log(index);
+      
     }
     return <>
         <div>
@@ -159,9 +159,9 @@ export default function Header() {
 
                         navMenu.map((data, index) => {
                             return (
-                                <div className="flex flex-row font-semi bold m-3 text-black items-center justify-center">
+                                <div key={index} className="flex flex-row font-semi bold m-3 text-black items-center justify-center">
                                     {
-                                        <NavItem data={data} key={data.id} handleOnclickMenu={handleOnclickMenu} selectedMenuIndex={selectedMenuIndex} />
+                                        <NavItem  data={data} key={data.id} handleOnclickMenu={handleOnclickMenu} selectedMenuIndex={selectedMenuIndex} />
                                     }
                                 </div>
                             )

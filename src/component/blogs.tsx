@@ -77,12 +77,12 @@ const Blogs = () => {
             <div className="mx-[10%] grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8">
 
                 {
-                    detail.map((detail) => {
+                    detail.map((detail,index) => {
                         return (
 
 
 
-                            <div className="">
+                            <div key={index} className="">
                                 <div className="w-full mb-1  lg:mb-[2rem]  overflow-hidden ">
 
 
@@ -122,9 +122,9 @@ const Blogs = () => {
 
             <div className="flex justify-evenly mx-[2%] md:mx-[7%]  mt-5 lg:mt-10">
                 {
-                    image.map((data) => {
+                    image.map((data,index) => {
                         return (
-                            <div className=''>
+                            <div key={index} className=''>
                                 <img src={data.Image} alt="" />
                             </div>
                         )

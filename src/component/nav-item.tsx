@@ -5,7 +5,7 @@ const NavItem = ({ data, handleOnclickMenu, selectedMenuIndex }: { data: any, ha
 
     const { title, submenu, icon } = data;
 
-    console.log(submenu, icon)
+
 
 
 
@@ -21,9 +21,9 @@ const NavItem = ({ data, handleOnclickMenu, selectedMenuIndex }: { data: any, ha
             {(selectedMenuIndex == Number(data.id)) && <div className="absolute flex items-center justify-center rounded-b-lg w-[6rem] mx-10 z-20 bg-white translate-y-7 -translate-x-10">
                 <ul>
                     {/* {icon && submenu.map((({list} : {list:any}) => <DropdownList list={list}/>))} */}
-                    {submenu.map((listItem: any) => {
+                    {submenu.map((listItem: any,index:number) => {
                         return (
-                            <DropdownListItem listItem={listItem} />
+                            <DropdownListItem key={index} listItem={listItem} />
                         )
                     })}
                     {/* <DropdownData list={submenu} /> */}

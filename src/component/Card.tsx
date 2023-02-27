@@ -80,13 +80,11 @@ const Card = () => {
             
                 <Slider {...settings}>
                     {
-                        item.map((data) => {
+                        item.map((data,index) => {
                             return (
-
-                                <div className="">
+                                <div key={index} className="">
                                     <div className="flex  ">
-                                        <img className="w-[90%]" src={data.Image} alt="" />
-
+                                        <img key={index} className="w-[90%]" src={data.Image} alt="" />
                                     </div>
                                     <div className='w-[90%] mt-2'>
                                         <p className="text-xl md:text-2xl lg:text-3xl font-semibold">{data.title}</p>
