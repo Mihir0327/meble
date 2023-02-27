@@ -100,7 +100,6 @@ const Card = () => {
                 </Slider>
             </div>
         </div>
-
     )
 }
 

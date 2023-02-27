@@ -15,7 +15,7 @@ const MainPage = () => {
             <Summery />
             <Discount />
             <VideoPlayer />
-            {/* <Card /> */}
+            <Card />
             <Blogs />
             <Footer />
         </>

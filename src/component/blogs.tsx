@@ -46,19 +46,19 @@ const Blogs = () => {
     const image = [
         {
 
-            Image: '/images/glysis.jpg'
+            Image: '/images/1.png'
         },
         {
-            Image: '/images/glysis.jpg'
+            Image: '/images/2.png'
         },
         {
-            Image: '/images/glysis.jpg'
+            Image: '/images/3.png'
         },
         {
-            Image: '/images/glysis.jpg'
+            Image: '/images/4.png'
         },
         {
-            Image: '/images/glysis.jpg'
+            Image: '/images/5.png'
         }
     ]
 
